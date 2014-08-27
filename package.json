@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "description": "Plugin loader node module used by different OpenROV packages. Loades plugins according to OpenROV projects standards.",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --bail --require should --reporter nyan"
   },
   "repository": {
     "type": "git",
