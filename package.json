@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "mocha --bail --require should --reporter nyan"
+    "test": "./node_modules/mocha/bin/mocha --bail --require should"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/codewithpassion/node-openrov-pluginloader/issues"
   },
-  "homepage": "https://github.com/codewithpassion/node-openrov-pluginloader"
+  "homepage": "https://github.com/codewithpassion/node-openrov-pluginloader",
+  "devDependencies": {
+    "mkdirp": "^0.5.0",
+    "mocha": "^1.21.4",
+    "rimraf": "^2.2.8",
+    "should": "^4.0.4",
+    "sinon": "^1.10.3"
+  }
 }
